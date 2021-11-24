@@ -3,11 +3,12 @@
   <hr class="text-white" />
   <div class="list-group list-reset">
     <a
-      *ngFor="let item of historial"
+      *ngFor="let gif of historial"
       href="#"
       class="list-group-item list-group-item-action"
+      (click)="buscar(gif)"
     >
-      {{ item | titlecase }}</a
+      {{ gif }}</a
     >
   </div>
 </div>
